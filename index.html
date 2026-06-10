@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AgroWeiber | Ciência, Sustentabilidade e Tecnologia para o Agro do Futuro</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- LOADING SCREEN -->
+
+<div id="loader">
+
+<div class="loader-content">
+
+<div class="loader-logo">
+🌱 AgroWeiber
+</div>
+
+<div class="loader-bar">
+<div class="loader-progress"></div>
+</div>
+
+<p>Carregando Plataforma...</p>
+
+</div>
+
+</div>
+
+<!-- SCROLL PROGRESS -->
+
+<div id="scroll-progress"></div>
+
+<!-- PARTICLES -->
+
+<div id="particles-container"></div>
+
+<!-- BOTÃO TOPO -->
+
+<button id="backToTop">
+<i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- HEADER -->
+
+<header id="header">
+
+<div class="logo">
+
+<div class="logo-icon">
+🌿
+</div>
+
+<div>
+<h2>AgroWeiber</h2>
+<span>AgTech & Bioeconomia</span>
+</div>
+
+</div>
+
+<nav id="nav">
+
+<ul>
+
+<li><a href="#inicio">Início</a></li>
+
+<li><a href="#bioeconomia">Bioeconomia</a></li>
+
+<li><a href="#pilares">Ciência</a></li>
+
+<li><a href="#bioinsumos">Bioinsumos</a></li>
+
+<li><a href="#inteligencia">Dashboard</a></li>
+
+<li><a href="#educacao">Educação</a></li>
+
+<li><a href="#agrofinance">AgroFinance</a></li>
+
+<li><a href="#contato">Contato</a></li>
+
+</ul>
+
+</nav>
+
+<div class="header-actions">
+
+<button id="themeToggle">
+
+<i class="fas fa-moon"></i>
+
+</button>
+
+<button id="mobileMenu">
+
+<i class="fas fa-bars"></i>
+
+</button>
+
+</div>
+
+</header>
+
+<!-- HERO -->
+
+<section id="inicio" class="hero">
+
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+
+<div class="hero-badge">
+🚀 Plataforma de Bioeconomia e Inovação
+</div>
+
+<h1>
+
+Ciência e Bioeconomia:
+<span>O Futuro Sustentável</span>
+
+</h1>
+
+<p>
+
+A inovação científica está transformando o agronegócio
+em uma potência sustentável para as próximas gerações.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#bioeconomia" class="btn-primary">
+Explorar Plataforma
+</a>
+
+<a href="#inteligencia" class="btn-secondary">
+Ver Dashboard
+</a>
+
+</div>
+
+<div class="hero-stats">
+
+<div class="hero-stat">
+
+<h3>+82%</h3>
+
+<span>Adoção de Bioinsumos</span>
+
+</div>
+
+<div class="hero-stat">
+
+<h3>+64%</h3>
+
+<span>Eficiência Sustentável</span>
+
+</div>
+
+<div class="hero-stat">
+
+<h3>-47%</h3>
+
+<span>Redução de Emissões</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CENTRO DE INTELIGÊNCIA -->
+
+<section id="inteligencia" class="intelligence-section">
+
+<div class="section-header">
+
+<span class="section-tag">
+Centro de Inteligência
+</span>
+
+<h2>
+Centro de Inteligência AgroWeiber
+</h2>
+
+<p>
+
+Monitoramento estratégico para
+sustentabilidade, ciência e desempenho financeiro.
+
+</p>
+
+</div>
+
+<div class="intelligence-grid">
+
+<div class="intel-card">
+
+<i class="fas fa-leaf"></i>
+
+<h3>Sustentabilidade</h3>
+
+<div class="live-number" data-target="94">
+0
+</div>
+
+<p>Índice ESG</p>
+
+</div>
+
+<div class="intel-card">
+
+<i class="fas fa-flask"></i>
+
+<h3>Pesquisa Científica</h3>
+
+<div class="live-number" data-target="127">
+0
+</div>
+
+<p>Projetos Monitorados</p>
+
+</div>
+
+<div class="intel-card">
+
+<i class="fas fa-seedling"></i>
+
+<h3>Bioinsumos</h3>
+
+<div class="live-number" data-target="88">
+0
+</div>
+
+<p>Adoção Tecnológica</p>
+
+</div>
+
+<div class="intel-card">
+
+<i class="fas fa-chart-line"></i>
+
+<h3>Eficiência</h3>
+
+<div class="live-number" data-target="91">
+0
+</div>
+
+<p>Performance Agro</p>
+
+</div>
+
+</div>
+
+<div class="widget-grid">
+
+<div class="widget">
+
+<h3>Produção Sustentável</h3>
+
+<canvas id="productionChart"></canvas>
+
+</div>
+
+<div class="widget">
+
+<h3>Redução de Emissões</h3>
+
+<canvas id="emissionsChart"></canvas>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- BIOECONOMIA -->
+
+<section id="bioeconomia" class="bioeconomy">
+
+<div class="section-header">
+
+<span class="section-tag">
+Bioeconomia
+</span>
+
+<h2>
+O Que é Bioeconomia?
+</h2>
+
+<p>
+
+Uma nova forma de crescimento econômico baseada
+em recursos biológicos renováveis, ciência e inovação.
+
+</p>
+
+</div>
+
+<div class="bio-grid">
+
+<div class="bio-card">
+
+<i class="fas fa-recycle"></i>
+
+<h3>Economia Circular</h3>
+
+<p>
+
+Reaproveitamento de resíduos agrícolas
+para geração de valor econômico.
+
+</p>
+
+</div>
+
+<div class="bio-card">
+
+<i class="fas fa-leaf"></i>
+
+<h3>Recursos Renováveis</h3>
+
+<p>
+
+Substituição de matérias-primas fósseis
+por fontes biológicas sustentáveis.
+
+</p>
+
+</div>
+
+<div class="bio-card">
+
+<i class="fas fa-globe-americas"></i>
+
+<h3>Desenvolvimento Sustentável</h3>
+
+<p>
+
+Produção agrícola equilibrada com
+preservação ambiental.
+
+</p>
+
+</div>
+
+<div class="bio-card">
+
+<i class="fas fa-lightbulb"></i>
+
+<h3>Inovação Científica</h3>
+
+<p>
+
+Tecnologias capazes de transformar
+o futuro da produção agrícola.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PILARES CIENTÍFICOS -->
+
+<section id="pilares" class="science-section">
+
+<div class="section-header">
+
+<span class="section-tag">
+Ciência
+</span>
+
+<h2>
+Pilares do Desenvolvimento Científico
+</h2>
+
+</div>
+
+<div class="science-grid">
+
+<div class="science-card">
+
+<div class="science-icon">
+🧬
+</div>
+
+<h3>Biotecnologia Industrial</h3>
+
+<ul>
+
+<li>Plásticos biodegradáveis</li>
+
+<li>Tecidos sustentáveis</li>
+
+<li>Química verde</li>
+
+</ul>
+
+</div>
+
+<div class="science-card">
+
+<div class="science-icon">
+🔬
+</div>
+
+<h3>Biologia Sintética</h3>
+
+<ul>
+
+<li>Engenharia genética</li>
+
+<li>Medicamentos</li>
+
+<li>Captura de carbono</li>
+
+</ul>
+
+</div>
+
+<div class="science-card">
+
+<div class="science-icon">
+⚛️
+</div>
+
+<h3>Nanotecnologia Verde</h3>
+
+<ul>
+
+<li>Embalagens inteligentes</li>
+
+<li>Materiais avançados</li>
+
+<li>Celulose nanotecnológica</li>
+
+</ul>
+
+</div>
+
+</div>
+
+                         </section>
+                         <!-- BOOM DOS BIOINSUMOS -->
+
+<section id="bioinsumos" class="bioinsumos-section">
+
+    <div class="section-header">
+
+        <span class="section-tag">
+            Bioinsumos
+        </span>
+
+        <h2>
+            O Boom dos Bioinsumos
+        </h2>
+
+        <p>
+            Soluções biológicas estão revolucionando a agricultura moderna,
+            reduzindo custos, diminuindo impactos ambientais e aumentando
+            a produtividade de forma sustentável.
+        </p>
+
+    </div>
+
+    <div class="bioinsumos-grid">
+
+        <div class="bioinsumo-card">
+
+            <div class="bio-icon">
+                🦠
+            </div>
+
+            <h3>Bactérias Benéficas</h3>
+
+            <p>
+                Microrganismos que auxiliam na fixação biológica de nitrogênio
+                e melhoram a absorção de nutrientes.
+            </p>
+
+        </div>
+
+        <div class="bioinsumo-card">
+
+            <div class="bio-icon">
+                🍄
+            </div>
+
+            <h3>Fungos Benéficos</h3>
+
+            <p>
+                Atuam no controle natural de doenças e fortalecem
+                o desenvolvimento radicular.
+            </p>
+
+        </div>
+
+        <div class="bioinsumo-card">
+
+            <div class="bio-icon">
+                🐞
+            </div>
+
+            <h3>Controle Biológico</h3>
+
+            <p>
+                Utilização de organismos naturais para combater
+                pragas agrícolas sem agressão ambiental.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="stats-grid">
+
+        <div class="stat-card">
+
+            <span class="counter" data-target="65">
+                0
+            </span>
+
+            <h4>%</h4>
+
+            <p>Redução de Químicos</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <span class="counter" data-target="40">
+                0
+            </span>
+
+            <h4>%</h4>
+
+            <p>Redução de Custos</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <span class="counter" data-target="75">
+                0
+            </span>
+
+            <h4>%</h4>
+
+            <p>Menor Impacto Ambiental</p>
+
+        </div>
+
+    </div>
+
+    <div class="charts-grid">
+
+        <div class="chart-card">
+
+            <h3>Comparativo de Uso</h3>
+
+            <canvas id="bioinsumosChart"></canvas>
+
+        </div>
+
+        <div class="chart-card">
+
+            <h3>Impacto Ambiental</h3>
+
+            <canvas id="impactChart"></canvas>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- TIMELINE -->
+
+<section class="timeline-section">
+
+    <div class="section-header">
+
+        <span class="section-tag">
+            Transformação
+        </span>
+
+        <h2>
+            Timeline de Impactos
+        </h2>
+
+    </div>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+
+                <h3>Descarbonização</h3>
+
+                <ul>
+
+                    <li>Biocombustíveis</li>
+
+                    <li>Etanol de Segunda Geração</li>
+
+                    <li>SAF - Combustível Sustentável de Aviação</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+
+                <h3>Economia Circular</h3>
+
+                <ul>
+
+                    <li>Biomassa Agrícola</li>
+
+                    <li>Bagaço de Cana</li>
+
+                    <li>Reaproveitamento de Resíduos</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+
+                <h3>Biodiversidade</h3>
+
+                <ul>
+
+                    <li>Amazônia</li>
+
+                    <li>Novos Medicamentos</li>
+
+                    <li>Cosméticos Sustentáveis</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- O GRANDE DESAFIO -->
+
+<section class="challenge-section">
+
+    <div class="challenge-card">
+
+        <h2>
+            O Grande Desafio
+        </h2>
+
+        <p>
+
+            O maior desafio atual é transformar descobertas científicas
+            em soluções escaláveis, acessíveis e economicamente viáveis
+            para toda a população.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- GLOSSÁRIO -->
+
+<section id="glossario" class="glossary-section">
+
+    <div class="section-header">
+
+        <span class="section-tag">
+            Glossário AgroVerde
+        </span>
+
+        <h2>
+            Conceitos Fundamentais
+        </h2>
+
+    </div>
+
+    <input
+        type="text"
+        id="glossarySearch"
+        placeholder="Pesquisar termo..."
+        class="search-input">
+
+    <div id="glossaryContainer" class="glossary-grid">
+
+        <div class="glossary-item">
+            <h3>ESG</h3>
+            <p>Critérios ambientais, sociais e de governança.</p>
+        </div>
+
+        <div class="glossary-item">
+            <h3>Agricultura Regenerativa</h3>
+            <p>Modelo agrícola que recupera os ecossistemas.</p>
+        </div>
+
+        <div class="glossary-item">
+            <h3>Plantio Direto</h3>
+            <p>Produção sem revolvimento intenso do solo.</p>
+        </div>
+
+        <div class="glossary-item">
+            <h3>Hidroponia</h3>
+            <p>Cultivo sem solo utilizando soluções nutritivas.</p>
+        </div>
+
+        <div class="glossary-item">
+            <h3>Bioinsumos</h3>
+            <p>Produtos biológicos usados na agricultura.</p>
+        </div>
+
+        <div class="glossary-item">
+            <h3>Biotecnologia</h3>
+            <p>Aplicação tecnológica de organismos vivos.</p>
+        </div>
+
+        <div class="glossary-item">
+            <h3>Biomassa</h3>
+            <p>Matéria orgânica utilizada para gerar energia.</p>
+        </div>
+
+        <div class="glossary-item">
+            <h3>Economia Circular</h3>
+            <p>Modelo econômico baseado em reaproveitamento.</p>
+        </div>
+
+        <div class="glossary-item">
+            <h3>Carbono Neutro</h3>
+            <p>Compensação das emissões de carbono.</p>
+        </div>
+
+        <div class="glossary-item">
+            <h3>Sustentabilidade</h3>
+            <p>Equilíbrio entre economia, sociedade e ambiente.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- BIBLIOTECA CIENTÍFICA -->
+
+<section class="library-section">
+
+    <div class="section-header">
+
+        <span class="section-tag">
+            Biblioteca Científica
+        </span>
+
+        <h2>
+            Pesquisas e Materiais
+        </h2>
+
+    </div>
+
+    <input
+        type="text"
+        id="librarySearch"
+        placeholder="Pesquisar artigos..."
+        class="search-input">
+
+    <div id="libraryContainer" class="library-grid">
+
+        <div class="library-card">
+            <h3>Bioeconomia e Agricultura</h3>
+            <p>Artigo científico sobre inovação sustentável.</p>
+        </div>
+
+        <div class="library-card">
+            <h3>Bioinsumos no Brasil</h3>
+            <p>Estudo sobre adoção de tecnologias biológicas.</p>
+        </div>
+
+        <div class="library-card">
+            <h3>Economia Circular Rural</h3>
+            <p>Pesquisa sobre reaproveitamento de resíduos.</p>
+        </div>
+
+        <div class="library-card">
+            <h3>Nanotecnologia Verde</h3>
+            <p>Material educativo sobre materiais avançados.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- NOTÍCIAS -->
+
+<section class="news-section">
+
+    <div class="section-header">
+
+        <span class="section-tag">
+            Agrotech News
+        </span>
+
+        <h2>
+            Central de Notícias
+        </h2>
+
+    </div>
+
+    <div class="news-filters">
+
+        <button class="news-filter active" data-category="all">
+            Todas
+        </button>
+
+        <button class="news-filter" data-category="ciencia">
+            Ciência
+        </button>
+
+        <button class="news-filter" data-category="tecnologia">
+            Tecnologia
+        </button>
+
+        <button class="news-filter" data-category="sustentabilidade">
+            Sustentabilidade
+        </button>
+
+        <button class="news-filter" data-category="bioeconomia">
+            Bioeconomia
+        </button>
+
+        <button class="news-filter" data-category="mercado">
+            Mercado
+        </button>
+
+    </div>
+
+    <div class="news-grid" id="newsGrid">
+      <div class="news-card" data-category="ciencia">
+            <h3>Nova geração de bioinsumos ganha espaço</h3>
+            <p>Pesquisadores desenvolvem soluções biológicas mais eficientes.</p>
+        </div>
+
+        <div class="news-card" data-category="tecnologia">
+            <h3>Drones revolucionam o monitoramento agrícola</h3>
+            <p>Maior precisão e redução de desperdícios no campo.</p>
+        </div>
+
+        <div class="news-card" data-category="sustentabilidade">
+            <h3>Agricultura regenerativa cresce no Brasil</h3>
+            <p>Produtores adotam práticas de recuperação do solo.</p>
+        </div>
+
+        <div class="news-card" data-category="bioeconomia">
+            <h3>Economia circular avança no agro</h3>
+            <p>Resíduos agrícolas tornam-se novas oportunidades.</p>
+        </div>
+
+        <div class="news-card" data-category="mercado">
+            <h3>Bioeconomia movimenta bilhões</h3>
+            <p>Mercado sustentável continua crescendo globalmente.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MAPA INTERATIVO -->
+
+<section class="map-section">
+
+    <div class="section-header">
+
+        <span class="section-tag">
+            Brasil Agro
+        </span>
+
+        <h2>
+            Mapa Interativo do Brasil
+        </h2>
+
+        <p>
+            Clique em uma região para visualizar informações.
+        </p>
+
+    </div>
+
+    <div class="regions-grid">
+
+        <button class="region-btn" data-region="norte">
+            Norte
+        </button>
+
+        <button class="region-btn" data-region="nordeste">
+            Nordeste
+        </button>
+
+        <button class="region-btn" data-region="centro">
+            Centro-Oeste
+        </button>
+
+        <button class="region-btn" data-region="sudeste">
+            Sudeste
+        </button>
+
+        <button class="region-btn" data-region="sul">
+            Sul
+        </button>
+
+    </div>
+
+    <div id="regionInfo" class="region-info">
+
+        <h3>Selecione uma região</h3>
+
+        <p>
+            Os dados aparecerão aqui.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- LABORATÓRIO -->
+
+<section class="innovation-section">
+
+    <div class="section-header">
+
+        <span class="section-tag">
+            Inovação
+        </span>
+
+        <h2>
+            Laboratório de Inovação
+        </h2>
+
+    </div>
+
+    <div class="innovation-grid">
+
+        <div class="innovation-card"
+             data-modal="precisao">
+
+            <h3>Agricultura de Precisão</h3>
+
+        </div>
+
+        <div class="innovation-card"
+             data-modal="sensoriamento">
+
+            <h3>Sensoriamento Remoto</h3>
+
+        </div>
+
+        <div class="innovation-card"
+             data-modal="drones">
+
+            <h3>Drones Agrícolas</h3>
+
+        </div>
+
+        <div class="innovation-card"
+             data-modal="dados">
+
+            <h3>Inteligência de Dados</h3>
+
+        </div>
+
+        <div class="innovation-card"
+             data-modal="genetica">
+
+            <h3>Melhoramento Genético</h3>
+
+        </div>
+
+        <div class="innovation-card"
+             data-modal="biotecnologia">
+
+            <h3>Biotecnologia Aplicada</h3>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MODAL -->
+
+<div id="modal" class="modal">
+
+    <div class="modal-content">
+
+        <span id="closeModal">&times;</span>
+
+        <div id="modalBody"></div>
+
+    </div>
+
+</div>
+
+<!-- OBSERVATÓRIO -->
+
+<section class="observatory-section">
+
+    <div class="section-header">
+
+        <span class="section-tag">
+            Observatório
+        </span>
+
+        <h2>
+            Observatório da Bioeconomia
+        </h2>
+
+    </div>
+
+    <div class="observatory-grid">
+
+        <div class="obs-card">
+            Tendências Globais
+        </div>
+
+        <div class="obs-card">
+            Cadeias Sustentáveis
+        </div>
+
+        <div class="obs-card">
+            Economia Circular
+        </div>
+
+        <div class="obs-card">
+            Energias Renováveis
+        </div>
+
+        <div class="obs-card">
+            Materiais Biodegradáveis
+        </div>
+
+    </div>
+
+    <canvas id="observatoryChart"></canvas>
+
+</section>
+
+<!-- QUIZ -->
+
+<section id="educacao" class="quiz-section">
+
+    <div class="section-header">
+
+        <span class="section-tag">
+            Educação
+        </span>
+
+        <h2>
+            Quiz AgroWeiber
+        </h2>
+
+    </div>
+
+    <div class="quiz-container">
+
+        <input
+            type="text"
+            id="studentName"
+            placeholder="Digite seu nome">
+
+        <div id="quizBox">
+
+        </div>
+
+        <button id="nextQuestion">
+
+            Próxima
+
+        </button>
+
+        <div id="quizResult"></div>
+
+    </div>
+
+</section>
+
+<!-- CERTIFICADO -->
+
+<section class="certificate-section">
+
+    <div id="certificate" class="certificate">
+
+        <h2>
+            Certificado Educacional
+        </h2>
+
+        <p>
+            Certificamos que
+        </p>
+
+        <h3 id="certificateName">
+            Participante
+        </h3>
+
+        <p>
+            concluiu o curso:
+        </p>
+
+        <h4>
+            Bioeconomia, Sustentabilidade e Agronegócio
+        </h4>
+
+        <p id="certificateScore">
+            Resultado
+        </p>
+
+        <p id="certificateDate">
+            Data
+        </p>
+
+    </div>
+
+</section>
+
+<!-- AGROFINANCE -->
+
+<section id="agrofinance" class="finance-section">
+
+    <div class="section-header">
+
+        <span class="section-tag">
+            AgroFinance
+        </span>
+
+        <h2>
+            Gestão Financeira Rural
+        </h2>
+
+    </div>
+
+    <div class="finance-forms">
+
+        <div class="finance-card">
+
+            <h3>
+                Registrar Receita
+            </h3>
+
+            <form id="incomeForm">
+
+                <input type="date"
+                       id="incomeDate">
+
+                <select id="incomeCategory">
+
+                    <option>Grãos</option>
+                    <option>Frutas</option>
+                    <option>Leite</option>
+                    <option>Pecuária</option>
+                    <option>Serviços</option>
+
+                </select>
+
+                <input type="text"
+                       id="incomeDescription"
+                       placeholder="Descrição">
+
+                <input type="number"
+                       id="incomeValue"
+                       placeholder="Valor">
+
+                <button type="submit">
+
+                    Salvar Receita
+
+                </button>
+
+            </form>
+
+        </div>
+
+        <div class="finance-card">
+
+            <h3>
+                Registrar Gasto
+            </h3>
+
+            <form id="expenseForm">
+
+                <input type="date"
+                       id="expenseDate">
+
+                <select id="expenseCategory">
+
+                    <option>Sementes</option>
+                    <option>Fertilizantes</option>
+                    <option>Bioinsumos</option>
+                    <option>Combustível</option>
+                    <option>Transporte</option>
+                    <option>Energia</option>
+
+                </select>
+
+                <input type="text"
+                       id="expenseDescription"
+                       placeholder="Descrição">
+
+                <input type="number"
+                       id="expenseValue"
+                       placeholder="Valor">
+
+                <button type="submit">
+
+                    Salvar Gasto
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <div class="dashboard-grid">
+
+        <div class="dashboard-card">
+
+            <h3>Receitas</h3>
+
+            <span id="totalIncome">
+                R$ 0
+            </span>
+
+        </div>
+
+        <div class="dashboard-card">
+
+            <h3>Gastos</h3>
+
+            <span id="totalExpenses">
+                R$ 0
+            </span>
+
+        </div>
+
+        <div class="dashboard-card">
+
+            <h3>Lucro Líquido</h3>
+
+            <span id="netProfit">
+                R$ 0
+            </span>
+
+        </div>
+
+    </div>
+
+    <canvas id="financeChart"></canvas>
+
+</section>
