@@ -1292,3 +1292,460 @@ Pilares do Desenvolvimento Científico
     <canvas id="financeChart"></canvas>
 
 </section>
+<!-- METAS FINANCEIRAS -->
+
+<section class="goals-section">
+
+    <div class="section-header">
+
+        <span class="section-tag">
+            Metas
+        </span>
+
+        <h2>
+            Metas Financeiras
+        </h2>
+
+    </div>
+
+    <form id="goalForm" class="goal-form">
+
+        <input
+            type="text"
+            id="goalName"
+            placeholder="Nome da meta">
+
+        <input
+            type="number"
+            id="goalTarget"
+            placeholder="Valor alvo">
+
+        <input
+            type="number"
+            id="goalCurrent"
+            placeholder="Valor atual">
+
+        <button type="submit">
+            Adicionar Meta
+        </button>
+
+    </form>
+
+    <div id="goalsContainer">
+
+    </div>
+
+</section>
+
+<!-- CALCULADORA DE RENTABILIDADE -->
+
+<section class="calculator-section">
+
+    <div class="section-header">
+
+        <span class="section-tag">
+            Rentabilidade
+        </span>
+
+        <h2>
+            Calculadora de Rentabilidade
+        </h2>
+
+    </div>
+
+    <div class="calculator-grid">
+
+        <input
+            type="number"
+            id="costHectare"
+            placeholder="Custo por hectare">
+
+        <input
+            type="number"
+            id="revenueHectare"
+            placeholder="Receita por hectare">
+
+        <button id="calculateProfitability">
+            Calcular
+        </button>
+
+    </div>
+
+    <div id="profitabilityResult"
+         class="result-box">
+
+    </div>
+
+</section>
+
+<!-- SIMULADOR DE SAFRA -->
+
+<section class="harvest-section">
+
+    <div class="section-header">
+
+        <span class="section-tag">
+            Simulador
+        </span>
+
+        <h2>
+            Simulador de Safra
+        </h2>
+
+    </div>
+
+    <div class="simulator-grid">
+
+        <input
+            type="number"
+            id="areaPlantada"
+            placeholder="Área Plantada (ha)">
+
+        <input
+            type="number"
+            id="produtividade"
+            placeholder="Produtividade">
+
+        <input
+            type="number"
+            id="precoVenda"
+            placeholder="Preço de Venda">
+
+        <button id="simulateHarvest">
+
+            Simular
+
+        </button>
+
+    </div>
+
+    <div id="harvestResult"
+         class="result-box">
+
+    </div>
+
+</section>
+
+<!-- CALCULADORA AMBIENTAL -->
+
+<section class="environment-section">
+
+    <div class="section-header">
+
+        <span class="section-tag">
+            Ambiental
+        </span>
+
+        <h2>
+            Calculadora Ambiental
+        </h2>
+
+    </div>
+
+    <div class="environment-grid">
+
+        <input
+            type="number"
+            id="waterSaving"
+            placeholder="Economia de Água (%)">
+
+        <input
+            type="number"
+            id="carbonReduction"
+            placeholder="Redução de Carbono (%)">
+
+        <input
+            type="number"
+            id="bioInputImpact"
+            placeholder="Uso de Bioinsumos (%)">
+
+        <input
+            type="number"
+            id="soilConservation"
+            placeholder="Conservação do Solo (%)">
+
+        <button id="calculateEnvironment">
+
+            Calcular Indicadores
+
+        </button>
+
+    </div>
+
+    <div id="environmentResult"
+         class="result-box">
+
+    </div>
+
+    <canvas id="environmentChart"></canvas>
+
+</section>
+
+<!-- RANKING ESG -->
+
+<section class="ranking-section">
+
+    <div class="section-header">
+
+        <span class="section-tag">
+            Sustentabilidade
+        </span>
+
+        <h2>
+            Ranking de Sustentabilidade
+        </h2>
+
+    </div>
+
+    <div class="ranking-grid">
+
+        <div class="ranking-card">
+
+            <h3>Economia de Água</h3>
+
+            <span id="rankingWater">
+                --
+            </span>
+
+        </div>
+
+        <div class="ranking-card">
+
+            <h3>Redução de Carbono</h3>
+
+            <span id="rankingCarbon">
+                --
+            </span>
+
+        </div>
+
+        <div class="ranking-card">
+
+            <h3>Uso de Bioinsumos</h3>
+
+            <span id="rankingBio">
+                --
+            </span>
+
+        </div>
+
+        <div class="ranking-card">
+
+            <h3>Conservação do Solo</h3>
+
+            <span id="rankingSoil">
+                --
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ESTATÍSTICAS -->
+
+<section class="statistics-section">
+
+    <div class="section-header">
+
+        <span class="section-tag">
+            Indicadores
+        </span>
+
+        <h2>
+            Estatísticas Dinâmicas
+        </h2>
+
+    </div>
+
+    <div class="statistics-grid">
+
+        <div class="stat-box">
+
+            <h3
+                class="counter"
+                data-target="250">
+                0
+            </h3>
+
+            <p>
+                Crescimento da Bioeconomia
+            </p>
+
+        </div>
+
+        <div class="stat-box">
+
+            <h3
+                class="counter"
+                data-target="180">
+                0
+            </h3>
+
+            <p>
+                Adoção de Bioinsumos
+            </p>
+
+        </div>
+
+        <div class="stat-box">
+
+            <h3
+                class="counter"
+                data-target="140">
+                0
+            </h3>
+
+            <p>
+                Redução de Emissões
+            </p>
+
+        </div>
+
+        <div class="stat-box">
+
+            <h3
+                class="counter"
+                data-target="300">
+                0
+            </h3>
+
+            <p>
+                Agricultura Sustentável
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTATO -->
+
+<section id="contato" class="contact-section">
+
+    <div class="section-header">
+
+        <span class="section-tag">
+            Contato
+        </span>
+
+        <h2>
+            AgroWeiber
+        </h2>
+
+        <p>
+            Ciência, Sustentabilidade e Tecnologia para o Agro do Futuro.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <div class="footer-grid">
+
+        <div>
+
+            <h3>
+                AgroWeiber
+            </h3>
+
+            <p>
+
+                Ciência, Sustentabilidade e Tecnologia para o Agro do Futuro.
+
+            </p>
+
+        </div>
+
+        <div>
+
+            <h4>
+                Links Rápidos
+            </h4>
+
+            <ul>
+
+                <li>
+                    <a href="#inicio">
+                        Início
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#bioeconomia">
+                        Bioeconomia
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#agrofinance">
+                        AgroFinance
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h4>
+                Contato
+            </h4>
+
+            <a href="mailto:weiber.luana@escola.pr.gov.br">
+
+                weiber.luana@escola.pr.gov.br
+
+            </a>
+
+        </div>
+
+        <div>
+
+            <h4>
+                Redes
+            </h4>
+
+            <div class="socials">
+
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-youtube"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-facebook"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        © 2026 AgroWeiber. Todos os direitos reservados.
+
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+  </html>
