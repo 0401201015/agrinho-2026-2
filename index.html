@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AgroWeiber</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- LOADER -->
+<div id="loader"></div>
+
+<!-- PROGRESS BAR -->
+<div id="scroll-progress"></div>
+
+<!-- PARTICLES -->
+<div id="particles-container"></div>
+
+<!-- HEADER -->
+<header>
+
+<div class="logo">
+<h2>AgroWeiber</h2>
+<span>Ciência, Sustentabilidade e Tecnologia</span>
+</div>
+
+<nav>
+
+<ul>
+<li><a href="#hero">Início</a></li>
+<li><a href="#bio">Bioeconomia</a></li>
+<li><a href="#producao-sustentavel">Produção</a></li>
+<li><a href="#financeiro">Financeiro</a></li>
+<li><a href="#quiz">Quiz</a></li>
+</ul>
+
+</nav>
+
+<button id="themeToggle">🌙</button>
+<button id="mobileMenu">☰</button>
+
+</header>
+
+<!-- HERO -->
+<section id="hero" class="hero reveal">
+
+<h1>Ciência e Bioeconomia: O Futuro Sustentável</h1>
+
+<p>
+A inovação científica está transformando o agronegócio em uma potência sustentável.
+</p>
+
+</section>
+
+<!-- BIOECONOMIA -->
+<section id="bio" class="section reveal">
+
+<div class="section-header">
+<h2>O que é Bioeconomia</h2>
+</div>
+
+<div class="content-box">
+
+<p>Uso sustentável de recursos biológicos para gerar valor econômico e ambiental.</p>
+
+</div>
+
+</section>
+
+<!-- PRODUÇÃO SUSTENTÁVEL -->
+<section id="producao-sustentavel" class="section reveal">
+
+<div class="section-header">
+<h2>Produção Sustentável</h2>
+</div>
+
+<div class="content-box">
+
+<p>
+Produção sustentável é produzir sem destruir o meio ambiente, respeitando recursos naturais e pessoas.
+</p>
+
+</div>
+
+</section>
+
+<!-- REDUÇÃO DE EMISSÕES -->
+<section id="reducao-emissoes" class="section reveal">
+
+<div class="section-header">
+<h2>Redução de Emissões</h2>
+</div>
+
+<div class="content-box">
+
+<p>
+Reduzir emissões significa diminuir gases poluentes como CO₂ através de energia limpa e eficiência produtiva.
+</p>
+
+</div>
+
+</section>
+
+<!-- GLOSSÁRIO -->
+<section class="section reveal">
+
+<h2>Glossário AgroVerde</h2>
+
+<input id="glossarySearch" placeholder="Buscar termo..." />
+
+<div class="glossary-item">ESG</div>
+<div class="glossary-item">Bioeconomia</div>
+<div class="glossary-item">Agricultura Regenerativa</div>
+<div class="glossary-item">Carbono Neutro</div>
+
+</section>
+
+<!-- BIBLIOTECA -->
+<section class="section reveal">
+
+<h2>Biblioteca Científica</h2>
+
+<input id="librarySearch" placeholder="Pesquisar artigos..." />
+
+<div class="library-card">Estudo sobre Bioinsumos</div>
+<div class="library-card">Agricultura Sustentável</div>
+<div class="library-card">Tecnologia no Agro</div>
+
+</section>
+
+<!-- NOTÍCIAS -->
+<section class="section reveal">
+
+<h2>Notícias AgroTech</h2>
+
+<button class="news-filter" data-category="all">Todos</button>
+<button class="news-filter" data-category="ciencia">Ciência</button>
+
+<div class="news-card" data-category="ciencia">Nova tecnologia reduz uso de água</div>
+
+</section>
+
+<!-- MAPA -->
+<section class="section reveal">
+
+<h2>Mapa do Brasil</h2>
+
+<button class="region-btn" data-region="norte">Norte</button>
+<button class="region-btn" data-region="sudeste">Sudeste</button>
+
+<div id="regionInfo"></div>
+
+</section>
+
+<!-- LABORATÓRIO -->
+<section class="section reveal">
+
+<h2>Laboratório de Inovação</h2>
+
+<div class="innovation-card" data-topic="precisao">Agricultura de Precisão</div>
+<div class="innovation-card" data-topic="drones">Drones</div>
+<div class="innovation-card" data-topic="biotecnologia">Biotecnologia</div>
+
+</section>
+
+<!-- MODAL -->
+<div id="innovationModal" class="modal">
+
+<div class="modal-content">
+
+<span id="closeModal">X</span>
+
+<div id="modalBody"></div>
+
+</div>
+
+</div>
+
+<!-- OBSERVATÓRIO -->
+<section class="section reveal">
+
+<h2>Observatório da Bioeconomia</h2>
+
+<canvas id="observatoryChart" width="600" height="400"></canvas>
+
+</section>
+
+<!-- QUIZ -->
+<section id="quiz" class="section reveal">
+
+<h2>Quiz Educacional</h2>
+
+<input id="participantName" placeholder="Seu nome" />
+
+<div id="quizBox"></div>
+
+<button id="nextQuestion">Próxima</button>
+
+<div id="quizResult"></div>
+
+<div id="quizStats"></div>
+
+</section>
+
+<!-- CERTIFICADO -->
+<div id="certificate" style="display:none;">
+
+<h2>Certificado AgroWeiber</h2>
+
+<h3 id="certificateName"></h3>
+
+<p id="certificateDate"></p>
+
+<div id="certificateScore"></div>
+
+</div>
+
+<!-- AGROFINANCE -->
+<section id="financeiro" class="section reveal">
+
+<h2>AgroFinance</h2>
+
+<form id="receitaForm">
+
+<input name="data" placeholder="Data">
+<input name="categoria" placeholder="Categoria">
+<input name="descricao" placeholder="Descrição">
+<input name="valor" placeholder="Valor">
+
+<button type="submit">Adicionar Receita</button>
+
+</form>
+
+<form id="gastoForm">
+
+<input name="data" placeholder="Data">
+<input name="categoria" placeholder="Categoria">
+<input name="descricao" placeholder="Descrição">
+<input name="valor" placeholder="Valor">
+
+<button type="submit">Adicionar Gasto</button>
+
+</form>
+
+<h3>Resumo</h3>
+
+<p>Receita: <span id="receitaTotal"></span></p>
+<p>Gastos: <span id="gastoTotal"></span></p>
+<p>Lucro: <span id="lucroTotal"></span></p>
+
+<canvas id="financeChart" width="600" height="400"></canvas>
+
+</section>
+
+<!-- METAS -->
+<section class="section reveal">
+
+<h2>Metas Financeiras</h2>
+
+<form id="goalForm">
+
+<input id="goalName" placeholder="Nome">
+<input id="goalTarget" placeholder="Meta">
+<input id="goalCurrent" placeholder="Atual">
+
+<button type="submit">Criar Meta</button>
+
+</form>
+
+<div id="goalsContainer"></div>
+
+</section>
+
+<!-- CALCULADORA RENTABILIDADE -->
+<section class="section reveal">
+
+<h2>Rentabilidade</h2>
+
+<input id="costPerHectare" placeholder="Custo/ha">
+<input id="revenuePerHectare" placeholder="Receita/ha">
+
+<button id="calculateProfitability">Calcular</button>
+
+<div id="profitabilityResult"></div>
+
+</section>
+
+<!-- SIMULADOR -->
+<section class="section reveal">
+
+<h2>Simulador de Safra</h2>
+
+<input id="harvestArea" placeholder="Área">
+<input id="harvestYield" placeholder="Produtividade">
+<input id="harvestPrice" placeholder="Preço">
+
+<button id="simulateHarvest">Simular</button>
+
+<div id="harvestResult"></div>
+
+</section>
+
+<!-- AMBIENTAL -->
+<section class="section reveal">
+
+<h2>Calculadora Ambiental</h2>
+
+<input id="waterSaving" placeholder="Água %">
+<input id="carbonReduction" placeholder="Carbono %">
+<input id="bioInputUse" placeholder="Bioinsumos %">
+<input id="soilConservation" placeholder="Solo %">
+
+<button id="calculateEnvironment">Calcular</button>
+
+<div id="environmentResult"></div>
+
+<canvas id="environmentChart" width="600" height="400"></canvas>
+
+</section>
+
+<!-- ESG -->
+<section class="section reveal">
+
+<h2>Ranking ESG</h2>
+
+<p>Água: <span id="waterRank">0</span></p>
+<p>Carbono: <span id="carbonRank">0</span></p>
+<p>Bioinsumos: <span id="bioRank">0</span></p>
+<p>Solo: <span id="soilRank">0</span></p>
+
+<p>Score: <span id="esgScore">0</span></p>
+
+<button id="saveESG">Salvar ESG</button>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+<p>AgroWeiber</p>
+<p>Ciência, Sustentabilidade e Tecnologia para o Agro do Futuro.</p>
+
+<p>
+<a href="mailto:weiber.luana@escola.pr.gov.br">
+weiber.luana@escola.pr.gov.br
+</a>
+</p>
+
+<p>© 2026 AgroWeiber</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+  </html>
